@@ -13,8 +13,12 @@ class City extends Component {
         description: "",
         selectedCity: "",
         isChecked: false,
+<<<<<<< HEAD
         selectedNews: "",
         display: true,
+=======
+        video: ""
+>>>>>>> 1903e891dd6ef7bd2e55aaff2806c086bac665e5
     }
 
     // handleClick = (city) => {
@@ -38,6 +42,17 @@ class City extends Component {
 
     }
 
+    componentDidMount() {
+        fetch('https://api.windy.com/api/webcams/v2/list/country=DE?key=0g3HlpB7OECc0g5zoQU70Pc5SktXe8Kj')
+            .then((response) => {
+                return response.json();
+            })
+
+            .then((data) => {
+                console.log(data);
+                //  this.setState({ news: newArray });
+            })
+    };
 
     render() {
         // return ( 
