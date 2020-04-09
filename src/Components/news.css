@@ -1,4 +1,19 @@
-.news{
+.news0{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vh;
+}
+.news1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vh;
+}
+.news2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vh;
+}
+.news3{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3vh;

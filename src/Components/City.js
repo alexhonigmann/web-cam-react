@@ -13,12 +13,12 @@ class City extends Component {
         description: "",
         selectedCity: "",
         isChecked: false,
-<<<<<<< HEAD
         selectedNews: "",
-        display: true,
-=======
+        display0: true,
+        display1: true,
+        display2: true,
+        display3: true,
         video: ""
->>>>>>> 1903e891dd6ef7bd2e55aaff2806c086bac665e5
     }
 
     // handleClick = (city) => {
@@ -30,7 +30,17 @@ class City extends Component {
         this.setState({ selectedCity: citydata[city].name });
         this.setState({ isChecked: true });
         this.setState({ selectedNews: citydata[city].fetch });
-        this.setState({ display: false });
+        if (city === 0) {
+            this.setState({ display0: !this.state.display0 });
+        } else if (city === 1) {
+            this.setState({ display1: !this.state.display1 });
+        } else if (city === 2) {
+            this.setState({ display2: !this.state.display2 });
+        } else if (city === 3) {
+            this.setState({ display3: !this.state.display3 });
+        }
+
+        console.log(city)
 
     }
 
@@ -38,7 +48,10 @@ class City extends Component {
         this.setState({ description: "" });
         this.setState({ selectedCity: "" });
         this.setState({ isChecked: false });
-        this.setState({ display: true });
+        this.setState({ display0: true });
+        this.setState({ display1: true });
+        this.setState({ display2: true });
+        this.setState({ display3: true });
 
     }
 
@@ -88,17 +101,17 @@ class City extends Component {
                     {this.state.selectedCity}
                     {this.state.description}
                 </div>
-                <div className={this.state.display ? "none" : "news"} >
+                <div className={this.state.display0 ? "none" : "news0"} >
                     <NewsUsa />
 
                 </div>
-                <div className={this.state.display ? "none" : "news"} >
+                <div className={this.state.display1 ? "none" : "news1"} >
                     <NewsGB />
                 </div>
-                <div className={this.state.display ? "none" : "news"} >
+                <div className={this.state.display2 ? "none" : "news2"} >
                     <NewsFrance />
                 </div>
-                <div className={this.state.display ? "none" : "news"} >
+                <div className={this.state.display3 ? "none" : "news3"} >
                     <NewsGermany />
                 </div>
 
