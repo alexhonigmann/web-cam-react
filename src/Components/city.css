@@ -3,6 +3,7 @@
 /* </style> */
 
 .city-container {
+    
     border-radius: 49px;
     background: #BAD6E5;
     box-shadow: inset 10px 10px 12px #a2bac7, inset -10px -10px 12px #d2f2ff;
@@ -10,6 +11,7 @@
     opacity: 0.8;
     padding: 20px;
     display: inline-block;
+    
     margin-top: 50px;
     margin-left: 50px;
     width: 350px;
@@ -26,8 +28,13 @@
     text-align: center;
 }
 body {
-    background-color: #BAD6E5;
+    background-color:#A2BDF2;
 }
 .x {
     color: blue;
+}
+.youtube{
+    /* height: 700px; */
+    margin-left: 500px;
+    
 }
