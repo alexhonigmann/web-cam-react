@@ -12,7 +12,7 @@
     justify-content: space-evenly;
     align-items: center;
 }
-li{
+.footer li{
     list-style: none;
 }
 .github{

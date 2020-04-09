@@ -16,13 +16,13 @@
     height: 400px;
     /* list-style-type: none; */
 }
-li {
+.city-container li {
     list-style-type: none;
     font-size: 4rem;
     font-family: 'Oswald', sans-serif;
     cursor: pointer;
 }
-ul {
+.city-container ul {
     text-align: center;
 }
 body {
