@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
+import Footer from './Components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <City /> 
+      {/* <City />
       <News />
-      <Webcam />
+      <Webcam /> */}
       <Footer />
     </div>
   );
