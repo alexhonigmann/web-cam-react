@@ -89,33 +89,40 @@ class City extends Component {
 
 
         return (
-            <div className="city-container">
-                <ul style={{ display: this.state.isChecked ? 'none' : 'block' }} >
-                    <li onClick={() => this.handleClick(0)}>New York</li>
-                    <li onClick={() => this.handleClick(1)}>London</li>
-                    <li onClick={() => this.handleClick(2)}>Paris</li>
-                    <li onClick={() => this.handleClick(3)}>Berlin</li>
-                </ul>
-                <div>
-                    <button style={{ display: !this.state.isChecked ? 'none' : 'block' }} onClick={this.handleBack}>back</button>
-                    {this.state.selectedCity}
-                    {this.state.description}
-                </div>
-                <div className={this.state.display0 ? "none" : "news0"} >
-                    <NewsUsa />
+            <section>
+                <div className="city-container">
+                    <ul style={{ display: this.state.isChecked ? 'none' : 'block' }} >
+                        <li onClick={() => this.handleClick(0)}>New York</li>
+                        <li onClick={() => this.handleClick(1)}>London</li>
+                        <li onClick={() => this.handleClick(2)}>Paris</li>
+                        <li onClick={() => this.handleClick(3)}>Berlin</li>
+                    </ul>
+                    <div>
+                        <button style={{ display: !this.state.isChecked ? 'none' : 'block' }} onClick={this.handleBack}>back</button>
+                        {this.state.selectedCity}
+                        {this.state.description}
+                    </div>
+                </div >
+                <div className="news-container">
+                    <div className={this.state.display0 ? "none" : "news0"} >
+                        <NewsUsa />
 
-                </div>
-                <div className={this.state.display1 ? "none" : "news1"} >
-                    <NewsGB />
-                </div>
-                <div className={this.state.display2 ? "none" : "news2"} >
-                    <NewsFrance />
-                </div>
-                <div className={this.state.display3 ? "none" : "news3"} >
-                    <NewsGermany />
+                    </div>
+                    <div className={this.state.display1 ? "none" : "news1"} >
+                        <NewsGB />
+                    </div>
+                    <div className={this.state.display2 ? "none" : "news2"} >
+                        <NewsFrance />
+                    </div>
+                    <div className={this.state.display3 ? "none" : "news3"} >
+                        <NewsGermany />
+                    </div>
                 </div>
 
-            </div >
+
+
+            </section>
+
         );
     }
 }

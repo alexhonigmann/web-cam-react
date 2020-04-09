@@ -37,7 +37,7 @@ class NewsFrance extends Component {
     };
     render() {
         return (
-            <section className="news">
+            <section className="news2">
                 {this.state.news.map((news, i) => <NewsItem key={i} urlToImage={news.urlToImage} title={news.title} description={news.description} source={news.source.name} author={news.author} url={news.url} />)}
             </section>
         );
