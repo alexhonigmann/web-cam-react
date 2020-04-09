@@ -13,6 +13,8 @@ class City extends Component {
         description: "",
         selectedCity: "",
         isChecked: false,
+        video: "",
+        youtube: false,
         selectedNews: "",
         display0: true,
         display1: true,
@@ -21,14 +23,13 @@ class City extends Component {
         video: ""
     }
 
-    // handleClick = (city) => {
-    //     this.setState({ description: citydata[city].description });
-    //     this.setState({ selectedCity: city });
 
     handleClick = (city) => {
         this.setState({ description: citydata[city].description });
         this.setState({ selectedCity: citydata[city].name });
         this.setState({ isChecked: true });
+        this.setState({ youtube: true });
+        this.setState({ video: citydata[city].youtube })
         this.setState({ selectedNews: citydata[city].fetch });
         if (city === 0) {
             this.setState({ display0: !this.state.display0 });
@@ -48,6 +49,8 @@ class City extends Component {
         this.setState({ description: "" });
         this.setState({ selectedCity: "" });
         this.setState({ isChecked: false });
+        this.setState({ youtube: false });
+        this.setState({ video: "" })
         this.setState({ display0: true });
         this.setState({ display1: true });
         this.setState({ display2: true });
@@ -61,32 +64,9 @@ class City extends Component {
                 return response.json();
             })
 
-            .then((data) => {
-                console.log(data);
-                //  this.setState({ news: newArray });
-            })
-    };
+    }
 
     render() {
-        // return ( 
-        //     <div className="city-container">
-        //     <ul>
-
-        //         <li onClick={() => this.handleClick(0)}>New York</li>
-        //         <li onClick={() => this.handleClick(1)}>London</li>
-        //         <li onClick={() => this.handleClick(2)}>Paris</li>
-        //         <li onClick={() => this.handleClick(3)}>Berlin</li>
-        //         {/* <CityItem />
-        //         <CityItem />
-        //         <CityItem />
-        //         <CityItem /> */}
-        //     </ul>
-        //     <div>
-        //         {this.state.description}
-        //     </div>
-        //     </div>
-        //  );
-
 
         return (
             <section>
@@ -119,9 +99,15 @@ class City extends Component {
                     </div>
                 </div>
 
-
-
+                <div className="youtube">
+                    <iframe width="560" height="430" src={this.state.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div className={this.state.display0 ? "none" : "news0"} >
+                    <NewsUsa />
+                </div>
             </section>
+
+
 
         );
     }
