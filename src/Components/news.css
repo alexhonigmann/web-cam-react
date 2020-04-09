@@ -1,0 +1,16 @@
+.news{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vh;
+}
+.news img{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.newsItem{
+    border: 1px solid black;
+    margin-bottom: 3vh;
+}

@@ -1,22 +1,23 @@
 import React from 'react';
 import './App.css';
-import City from "./Components/City.js";
-// import News from "./Components/News.js"
-// import Webcam from "./Components/Webcam.js"
-// import Footer from "./Components/Footer.js"
-import Footer from './Components/Footer';
+import City from "./Components/City";
 
+
+
+import NewsGermany from './Components/NewsGermany';
+import NewsGB from './Components/NewsGB';
+import NewsFrance from './Components/NewsFrance';
+import NewsUsa from './Components/NewsUsa';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <City /> 
-      {/* <News /> */}
-      {/* <Webcam /> */}
-      {/* <Footer /> */}
-      {/* <City />
-      <News />
-      <Webcam /> */}
+      <City />
+      <NewsGermany />
+      <NewsGB />
+      <NewsFrance />
+      <NewsUsa />
       <Footer />
     </div>
   );

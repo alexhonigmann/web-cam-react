@@ -12,12 +12,16 @@ const Footer = () => {
                     <li>Lorem</li>
                     <li>Lorem</li>
                 </ul>
-                <a href="#!"className="github"></a>
-                <a href="#!" className="facebook"></a>
-                <a href="#!" className="twitter"></a>
-                <a href="#!" className="instagram"></a>
-                <a href="#!" className="email"></a>
-            </div> 
+                <ul>
+                    <li>Lorem</li>
+                    <li>Copyright 2020</li>
+                </ul>
+                <a href="https://github.com/alexhonigmann" className="github"> </a>
+                <a href="https://facebook.com/" className="facebook"> </a>
+                <a href="https://twitter.com/explore" className="twitter"> </a>
+                <a href="https://www.instagram.com/" className="instagram"> </a>
+                <a href="#!" className="email"> </a>
+            </div>
         </div>
     );
 }

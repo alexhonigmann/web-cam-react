@@ -1,5 +1,5 @@
 .footer{
-    background-color:#F8F8F8;
+    background-color:rgb(133, 162, 177);
     border-top: 1px solid #E7E7E7;
     text-align: center;
     position: fixed;
@@ -12,9 +12,8 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.ul{
-    margin-top: 0;
-    padding-top: 0;
+.footer li{
+    list-style: none;
 }
 .github{
     background: url(https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png) center/ cover no-repeat;
