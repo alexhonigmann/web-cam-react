@@ -1,0 +1,43 @@
+.footer{
+    background-color:#F8F8F8;
+    border-top: 1px solid #E7E7E7;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ul{
+    margin-top: 0;
+    padding-top: 0;
+}
+.github{
+    background: url(https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png) center/ cover no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.facebook{
+    background: url(https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png) center/cover no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.twitter{
+    background: url(https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-512.png) center/ cover no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.instagram{
+    background: url(https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-512.png) center/ cover no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.email{
+    background: url(https://cdn3.iconfinder.com/data/icons/peelicons-vol-1/50/Mail-512.png) center/ cover no-repeat;
+    width: 32px;
+    height: 32px;
+}
