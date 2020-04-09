@@ -71,16 +71,22 @@ class City extends Component {
         return (
             <section>
                 <div className="city-container">
-                    <ul style={{ display: this.state.isChecked ? 'none' : 'block' }} >
-                        <li onClick={() => this.handleClick(0)}>New York</li>
-                        <li onClick={() => this.handleClick(1)}>London</li>
-                        <li onClick={() => this.handleClick(2)}>Paris</li>
-                        <li onClick={() => this.handleClick(3)}>Berlin</li>
-                    </ul>
                     <div>
-                        <button style={{ display: !this.state.isChecked ? 'none' : 'block' }} onClick={this.handleBack}>back</button>
-                        {this.state.selectedCity}
-                        {this.state.description}
+                        <ul style={{ display: this.state.isChecked ? 'none' : 'block' }} >
+                            <li onClick={() => this.handleClick(0)}>New York</li>
+                            <li onClick={() => this.handleClick(1)}>London</li>
+                            <li onClick={() => this.handleClick(2)}>Paris</li>
+                            <li onClick={() => this.handleClick(3)}>Berlin</li>
+                        </ul>
+                        <div>
+                            <button style={{ display: !this.state.isChecked ? 'none' : 'block' }} onClick={this.handleBack}>back</button>
+                            {this.state.selectedCity}
+                            {this.state.description}
+                        </div>
+                    </div>
+
+                    <div className="youtube">
+                        <iframe width="560" height="430" src={this.state.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div >
                 <div className="news-container">
@@ -99,9 +105,7 @@ class City extends Component {
                     </div>
                 </div>
 
-                <div className="youtube">
-                    <iframe width="560" height="430" src={this.state.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+
                 <div className={this.state.display0 ? "none" : "news0"} >
                     <NewsUsa />
                 </div>
