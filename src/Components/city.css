@@ -1,0 +1,33 @@
+/* <style> */
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+/* </style> */
+
+.city-container {
+    border-radius: 49px;
+    background: #BAD6E5;
+    box-shadow: inset 10px 10px 12px #a2bac7, inset -10px -10px 12px #d2f2ff;
+    color: black;
+    opacity: 0.8;
+    padding: 20px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 350px;
+    height: 400px;
+    /* list-style-type: none; */
+}
+li {
+    list-style-type: none;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+ul {
+    text-align: center;
+}
+body {
+    background-color: #BAD6E5;
+}
+.x {
+    color: blue;
+}
