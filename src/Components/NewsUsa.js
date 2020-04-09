@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NewsItem from "./NewsItem"
 import "./news.css"
 
+
 class NewsUsa extends Component {
     state = {
         news: []
